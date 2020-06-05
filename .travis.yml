@@ -16,6 +16,10 @@ before_install:
 install:
 #  - pip install --upgrade pip
 script:
+    
+  # Perform auto generation so that possible errors are caught.  
+  - bash auto_scripts/generate_alpha.sh 
+
 
   # Checks all files for commonly misspelled English words with client9's misspell
   - bash tests/misspell.bash

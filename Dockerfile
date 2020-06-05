@@ -19,6 +19,7 @@ COPY . /tmp
 WORKDIR /tmp
 
 RUN pip3 install --no-cache-dir -r requirements.txt && \
+    bash auto_scripts/generate_alpha.sh && \
     mkdocs build -d /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx
