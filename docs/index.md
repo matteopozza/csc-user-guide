@@ -2,6 +2,8 @@
 template: main-index.html
 ---
 
+This is an update
+
 <h1 id="welcometext"> Welcome to Docs CSC! </h1>
 
 !!! Overview
